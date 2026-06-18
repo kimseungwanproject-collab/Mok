@@ -1,11 +1,48 @@
-@import url('https://fonts.cdnfonts.com/css/metropolis-2');
 @import "tailwindcss";
 
+/* Saros (Headings) */
 @font-face {
   font-family: "Saros";
   font-weight: 400;
   font-display: swap;
   src: url("https://www.intecgroup.net/wp-content/uploads/2024/07/Saros-Regular.ttf") format("truetype");
+}
+
+/* Metropolis (Body) */
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-regular-webfont.woff2") format("woff2"),
+       url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-regular-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 500;
+  font-display: swap;
+  src: url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-medium-webfont.woff2") format("woff2"),
+       url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-medium-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 600;
+  font-display: swap;
+  src: url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-semibold-webfont.woff2") format("woff2"),
+       url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-semibold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-bold-webfont.woff2") format("woff2"),
+       url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-bold-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Metropolis";
+  font-weight: 800;
+  font-display: swap;
+  src: url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-extrabold-webfont.woff2") format("woff2"),
+       url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-extrabold-webfont.woff") format("woff");
 }
 
 :root {
