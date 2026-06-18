@@ -1,48 +1,45 @@
 @import "tailwindcss";
 
-/* Saros (Headings) */
+/* Apercu Pro (Turner Construction Font) */
 @font-face {
-  font-family: "Saros";
-  font-weight: 400;
+  font-family: "Apercu Pro";
+  src: url('https://ep-turnerconstruction-prod-asdcetgubtducba3.z01.azurefd.net/font/reset/apercu-pro/apercu-extralight-pro.woff2') format('woff2'), 
+       url('https://ep-turnerconstruction-prod-asdcetgubtducba3.z01.azurefd.net/font/reset/apercu-pro/apercu-extralight-pro.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
   font-display: swap;
-  src: url("https://www.intecgroup.net/wp-content/uploads/2024/07/Saros-Regular.ttf") format("truetype");
-}
-
-/* Metropolis (Body) */
-@font-face {
-  font-family: "Metropolis";
-  font-weight: 400;
-  font-display: swap;
-  src: url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-regular-webfont.woff2") format("woff2"),
-       url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-regular-webfont.woff") format("woff");
 }
 @font-face {
-  font-family: "Metropolis";
+  font-family: "Apercu Pro";
+  src: url('https://ep-turnerconstruction-prod-asdcetgubtducba3.z01.azurefd.net/font/reset/apercu-pro/apercu-light-pro.woff2') format('woff2'), 
+       url('https://ep-turnerconstruction-prod-asdcetgubtducba3.z01.azurefd.net/font/reset/apercu-pro/apercu-light-pro.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Apercu Pro";
+  src: url('https://ep-turnerconstruction-prod-asdcetgubtducba3.z01.azurefd.net/font/reset/apercu-pro/apercu-regular-pro.woff2') format('woff2'), 
+       url('https://ep-turnerconstruction-prod-asdcetgubtducba3.z01.azurefd.net/font/reset/apercu-pro/apercu-regular-pro.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Apercu Pro";
+  src: url('https://ep-turnerconstruction-prod-asdcetgubtducba3.z01.azurefd.net/font/reset/apercu-pro/apercu-medium-pro.woff2') format('woff2'), 
+       url('https://ep-turnerconstruction-prod-asdcetgubtducba3.z01.azurefd.net/font/reset/apercu-pro/apercu-medium-pro.woff') format('woff');
   font-weight: 500;
+  font-style: normal;
   font-display: swap;
-  src: url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-medium-webfont.woff2") format("woff2"),
-       url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-medium-webfont.woff") format("woff");
 }
 @font-face {
-  font-family: "Metropolis";
-  font-weight: 600;
-  font-display: swap;
-  src: url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-semibold-webfont.woff2") format("woff2"),
-       url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-semibold-webfont.woff") format("woff");
-}
-@font-face {
-  font-family: "Metropolis";
+  font-family: "Apercu Pro";
+  src: url('https://ep-turnerconstruction-prod-asdcetgubtducba3.z01.azurefd.net/font/reset/apercu-pro/apercu-bold-pro.woff2') format('woff2'), 
+       url('https://ep-turnerconstruction-prod-asdcetgubtducba3.z01.azurefd.net/font/reset/apercu-pro/apercu-bold-pro.woff') format('woff');
   font-weight: 700;
+  font-style: normal;
   font-display: swap;
-  src: url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-bold-webfont.woff2") format("woff2"),
-       url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-bold-webfont.woff") format("woff");
-}
-@font-face {
-  font-family: "Metropolis";
-  font-weight: 800;
-  font-display: swap;
-  src: url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-extrabold-webfont.woff2") format("woff2"),
-       url("https://www.intecgroup.net/wp-content/uploads/2024/03/metropolis-extrabold-webfont.woff") format("woff");
 }
 
 :root {
@@ -61,8 +58,8 @@
   --color-mok-orange: var(--color-mok-orange);
   --color-mok-gray: var(--color-mok-gray);
   --color-mok-dark: var(--color-mok-dark);
-  --font-sans: 'Metropolis', var(--font-geist-sans), sans-serif;
-  --font-heading: 'Saros', var(--font-sans);
+  --font-sans: 'Apercu Pro', var(--font-geist-sans), sans-serif;
+  --font-heading: var(--font-sans);
   --font-mono: var(--font-geist-mono);
 }
 
