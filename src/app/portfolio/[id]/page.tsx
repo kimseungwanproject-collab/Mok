@@ -37,9 +37,9 @@ export default async function ProjectDetailPage({ params }: { params: { id: stri
     notFound();
   }
 
-  // Google Maps Embed URL using standard query
+  // Google Maps Embed URL using standard query format
   const mapQuery = encodeURIComponent(`${project.title}, ${project.location}`);
-  const mapUrl = `https://maps.google.com/maps?q=${mapQuery}&t=&z=14&ie=UTF8&iwloc=&output=embed`;
+  const mapUrl = `https://maps.google.com/maps?width=100%25&height=600&hl=en&q=${mapQuery}&t=&z=14&ie=UTF8&iwloc=B&output=embed`;
 
   return (
     <div className="bg-gray-50 min-h-screen pt-20 pb-20">

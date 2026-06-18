@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/metropolis-2');
 @import "tailwindcss";
 
 :root {
@@ -16,7 +17,7 @@
   --color-mok-orange: var(--color-mok-orange);
   --color-mok-gray: var(--color-mok-gray);
   --color-mok-dark: var(--color-mok-dark);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: 'Metropolis', var(--font-geist-sans), sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 

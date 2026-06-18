@@ -74,6 +74,12 @@ export default function AdminDashboard() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    // Location validation for Google Maps embed
+    if (!formData.location || formData.location.trim().length < 5) {
+      alert("Please enter a valid, complete location (e.g., 'Reston, VA') so Google Maps can display it correctly.");
+      return;
+    }
+
     const method = editingProject ? 'PUT' : 'POST';
     const body = editingProject ? { ...formData, id: editingProject.id } : formData;
 
@@ -171,8 +177,8 @@ export default function AdminDashboard() {
                 <input required type="text" name="title" value={formData.title} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-md outline-none focus:ring-1 focus:ring-mok-orange" placeholder="e.g. JINYA Ramen Bar" />
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Location</label>
-                <input type="text" name="location" value={formData.location} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-md outline-none focus:ring-1 focus:ring-mok-orange" placeholder="e.g. Reston, VA" />
+                <label className="block text-sm font-medium text-gray-700 mb-1">Location *</label>
+                <input required minLength={5} type="text" name="location" value={formData.location} onChange={handleInputChange} className="w-full px-4 py-2 border rounded-md outline-none focus:ring-1 focus:ring-mok-orange" placeholder="e.g. Reston, VA" />
               </div>
             </div>
 
