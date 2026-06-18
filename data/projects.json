@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "title": "JINYA Ramen Bar",
+    "location": "Union Market, Washington DC",
+    "category": "Restaurants",
+    "image": "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80",
+    "sqft": "A-2 Restaurant",
+    "description": "Full renovation and expansion of an existing 2-story mercantile building for a new high-end A-2 restaurant space. Included expanding the floor area with a newly constructed basement level and rooftop patio seating, while preserving the historic facade."
+  },
+  {
+    "id": "2",
+    "title": "RAKU Sushi Restaurant",
+    "location": "Bethesda, MD",
+    "category": "Restaurants",
+    "image": "https://images.unsplash.com/photo-1579027989536-b7b1f875659b?auto=format&fit=crop&w=800&q=80",
+    "sqft": "Restaurant",
+    "description": "Complete interior transformation including custom millwork, new seating layouts, updated restrooms, decorative ceiling and wall features, and refined lighting."
+  },
+  {
+    "id": "3",
+    "title": "TreMonti Office",
+    "location": "Reston, VA",
+    "category": "Commercial Offices",
+    "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80",
+    "sqft": "5,700 sq ft",
+    "description": "Office tenant build-out featuring non-structural demountable partitions/doors (DIRTT MODULAR SYSTEM), metal stud framing, reception counters & millwork, ceilings, and finishes."
+  },
+  {
+    "id": "4",
+    "title": "Mindspace Shared Office",
+    "location": "Washington, D.C.",
+    "category": "Commercial Offices",
+    "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=800&q=80",
+    "sqft": "10,500 sq ft",
+    "description": "Full renovation of an existing coworking suite including selective demolition, non-structural partitions, new glass wall systems, electrical upgrades, and finish improvements."
+  },
+  {
+    "id": "5",
+    "title": "DJM Consulting Office",
+    "location": "Chantilly, VA",
+    "category": "Commercial Offices",
+    "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80",
+    "sqft": "4,200 sq ft",
+    "description": "Tenant build-out of executive offices and conference rooms. Includes demolition of existing partitions, framing & drywall, reception millwork, and upgraded M/E/P."
+  },
+  {
+    "id": "6",
+    "title": "American Eagle",
+    "location": "Multiple Locations",
+    "category": "Retail Stores",
+    "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
+    "sqft": "Retail",
+    "description": "Buildout for multiple American Eagle retail store locations across the DMV region."
+  }
+]
