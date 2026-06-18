@@ -10,13 +10,13 @@ export default function Footer() {
           
           {/* Company Info */}
           <div className="col-span-1 md:col-span-1">
-            <Link href="/" className="inline-block bg-white p-2 rounded mb-6">
+            <Link href="/" className="flex items-center mb-6">
               <Image 
                 src="/logo.png" 
                 alt="MOK Contracting LLC Logo" 
                 width={240} 
                 height={80} 
-                className="h-12 w-auto object-contain" 
+                className="brightness-0 invert" 
               />
             </Link>
             <p className="text-gray-300 text-sm mb-6 leading-relaxed">
