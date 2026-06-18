@@ -10,7 +10,7 @@ async function getProject(id: string) {
   try {
     const fileData = await fs.readFile(dataFilePath, 'utf-8');
     const projects = JSON.parse(fileData);
-    return projects.find((p: any) => p.id === id) || null;
+    return projects.find((p: any) => String(p.id) === String(id)) || null;
   } catch (error) {
     return null;
   }
@@ -23,15 +23,16 @@ export async function generateStaticParams() {
     const fileData = await fs.readFile(dataFilePath, 'utf-8');
     const projects = JSON.parse(fileData);
     return projects.map((p: any) => ({
-      id: p.id.toString(),
+      id: String(p.id),
     }));
   } catch (error) {
     return [];
   }
 }
 
-export default async function ProjectDetailPage({ params }: { params: { id: string } }) {
-  const project = await getProject(params.id);
+export default async function ProjectDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  const project = await getProject(id);
 
   if (!project) {
     notFound();
