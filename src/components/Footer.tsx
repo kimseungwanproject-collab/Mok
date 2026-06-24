@@ -32,10 +32,10 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-gray-300">
               <li><Link href="/" className="hover:text-mok-orange transition-colors">Home</Link></li>
-              <li><Link href="#services" className="hover:text-mok-orange transition-colors">Our Services</Link></li>
-              <li><Link href="#portfolio" className="hover:text-mok-orange transition-colors">Portfolio</Link></li>
-              <li><Link href="#process" className="hover:text-mok-orange transition-colors">Our Process</Link></li>
-              <li><Link href="#contact" className="hover:text-mok-orange transition-colors">Contact Us</Link></li>
+              <li><Link href="/services" className="hover:text-mok-orange transition-colors">Our Services</Link></li>
+              <li><Link href="/portfolio" className="hover:text-mok-orange transition-colors">Portfolio</Link></li>
+              <li><Link href="/#process" className="hover:text-mok-orange transition-colors">Our Process</Link></li>
+              <li><Link href="/contact" className="hover:text-mok-orange transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 

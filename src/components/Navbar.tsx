@@ -24,9 +24,9 @@ export default function Navbar() {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
               <Link href="/" className="text-gray-600 hover:text-mok-orange transition-colors font-medium">Home</Link>
-              <Link href="#services" className="text-gray-600 hover:text-mok-orange transition-colors font-medium">Services</Link>
-              <Link href="#portfolio" className="text-gray-600 hover:text-mok-orange transition-colors font-medium">Portfolio</Link>
-              <Link href="#contact" className="text-gray-600 hover:text-mok-orange transition-colors font-medium">Contact</Link>
+              <Link href="/services" className="text-gray-600 hover:text-mok-orange transition-colors font-medium">Services</Link>
+              <Link href="/portfolio" className="text-gray-600 hover:text-mok-orange transition-colors font-medium">Portfolio</Link>
+              <Link href="/contact" className="text-gray-600 hover:text-mok-orange transition-colors font-medium">Contact</Link>
             </nav>
 
             {/* CTA & Contact */}
@@ -35,7 +35,7 @@ export default function Navbar() {
                 <Phone className="w-4 h-4 mr-2 text-mok-orange" />
                 <span className="font-semibold text-sm">(703) 447-9513</span>
               </div>
-              <Link href="#contact" className="bg-mok-orange hover:bg-orange-600 text-white px-6 py-2 rounded font-bold transition-all transform hover:scale-105 shadow-md text-sm">
+              <Link href="/contact" className="bg-mok-orange hover:bg-orange-600 text-white px-6 py-2 rounded font-bold transition-all transform hover:scale-105 shadow-md text-sm">
                 FREE QUOTE
               </Link>
             </div>
