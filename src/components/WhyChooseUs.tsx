@@ -1,4 +1,7 @@
+"use client";
+
 import { CheckCircle2, Target, HeartHandshake, Zap } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function WhyChooseUs() {
   const differentiators = [
@@ -42,7 +45,12 @@ export default function WhyChooseUs() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
           {/* Left Side: Mission & Story */}
-          <div className="animate-fade-in-up">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.6 }}
+          >
             <h2 className="text-mok-orange font-bold tracking-wider uppercase text-sm mb-2">Why Choose Us</h2>
             <h3 className="text-3xl md:text-4xl font-extrabold mb-6 text-white">
               Building Lasting Relationships Through Excellence
@@ -61,12 +69,31 @@ export default function WhyChooseUs() {
             <p className="text-gray-300 leading-relaxed">
               Customer satisfaction is our highest priority at MOK Contracting. We take a hands-on approach, ensuring you receive expert guidance on site analysis, design, and material selection.
             </p>
-          </div>
+          </motion.div>
 
           {/* Right Side: Differentiators */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <motion.div 
+            className="grid grid-cols-1 sm:grid-cols-2 gap-6"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={{
+              visible: {
+                transition: {
+                  staggerChildren: 0.15
+                }
+              }
+            }}
+          >
             {differentiators.map((item, index) => (
-              <div key={index} className="bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300">
+              <motion.div 
+                key={index} 
+                className="bg-white/5 border border-white/10 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300"
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+                }}
+              >
                 <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center mb-4">
                   {item.icon}
                 </div>
@@ -74,9 +101,9 @@ export default function WhyChooseUs() {
                 <p className="text-sm text-gray-400">
                   {item.description}
                 </p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
         </div>
       </div>

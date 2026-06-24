@@ -1,6 +1,9 @@
+"use client";
+
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
@@ -21,7 +24,12 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-start justify-center">
-        <div className="max-w-2xl animate-fade-in-up">
+        <motion.div 
+          className="max-w-2xl"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <span className="inline-block py-1 px-3 rounded-full bg-mok-orange/20 text-mok-orange text-sm font-semibold tracking-wider mb-6 border border-mok-orange/30">
             SERVING VIRGINIA, MARYLAND & DC
           </span>
@@ -40,11 +48,16 @@ export default function Hero() {
               View Our Portfolio
             </Link>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Stats/Badges Bottom Bar */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 bg-mok-navy/80 backdrop-blur-md border-t border-white/10">
+      <motion.div 
+        className="absolute bottom-0 left-0 right-0 z-20 bg-mok-navy/80 backdrop-blur-md border-t border-white/10"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center divide-x divide-white/10">
             <div className="px-4">
@@ -65,7 +78,7 @@ export default function Hero() {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }
